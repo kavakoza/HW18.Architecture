@@ -12,7 +12,7 @@ def create_app(config_object):
     app = Flask(__name__)
     app.config.from_object(config_object)
     register_extensions(app)
-    app.app_context().push()
+
     return app
 
 def register_extensions(app):
